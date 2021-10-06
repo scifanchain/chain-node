@@ -17,7 +17,6 @@ default-features = false
 path = '../pallets/template'
 version = '3.0.0-monthly-2021-10'
 
-<<<<<<< HEAD
 [dependencies.pallet-mint]
 default-features = false
 path = '../pallets/mint'
@@ -28,8 +27,6 @@ default-features = false
 path = '../pallets/poe'
 version = '3.0.0-monthly-2021-10'
 
-=======
->>>>>>> 48e21dc6d8587776f9619fe63dbcab9e18d2f732
 [build-dependencies.substrate-wasm-builder]
 git = 'https://github.com/paritytech/substrate.git'
 tag = 'monthly-2021-10'
@@ -228,11 +225,8 @@ std = [
     'pallet-randomness-collective-flip/std',
     'pallet-sudo/std',
     'pallet-template/std',
-<<<<<<< HEAD
     'pallet-mint/std',
     'pallet-poe/std',
-=======
->>>>>>> 48e21dc6d8587776f9619fe63dbcab9e18d2f732
     'pallet-timestamp/std',
     'pallet-transaction-payment-rpc-runtime-api/std',
     'pallet-transaction-payment/std',
