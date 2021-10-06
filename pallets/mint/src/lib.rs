@@ -58,11 +58,9 @@ pub mod pallet {
 			#[pallet::compact] amount: T::Balance,
 		) -> DispatchResultWithPostInfo {
 			let sender = ensure_signed(origin)?;
-			let sender_balance = Self::get_balance(&sender);
-			let update_sender = sender_balance.saturating_add(amount);
 
 			// Update storage.
-			<BalanceToAccount<T>>::insert(&sender, update_sender);
+			<BalanceToAccount<T>>::insert(&sender, amount);
 
 			// Emit an event.
 			Self::deposit_event(Event::MintedNewSupply(sender));
