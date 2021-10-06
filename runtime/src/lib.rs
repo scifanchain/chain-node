@@ -43,12 +43,15 @@ pub use sp_runtime::{Perbill, Permill};
 /// Import the template pallet.
 pub use pallet_template;
 
+<<<<<<< HEAD
 /// Import Token mint pallet
 pub use pallet_mint;
 
 /// Import poe
 pub use pallet_poe;
 
+=======
+>>>>>>> 48e21dc6d8587776f9619fe63dbcab9e18d2f732
 /// An index to a block.
 pub type BlockNumber = u32;
 
@@ -283,6 +286,7 @@ impl pallet_template::Config for Runtime {
 	type Event = Event;
 }
 
+<<<<<<< HEAD
 impl pallet_mint::Config for Runtime {
     type Event = Event;
 	type Balance = Balance;
@@ -292,6 +296,8 @@ impl pallet_poe::Config for Runtime {
 	type Event = Event;
 }
 
+=======
+>>>>>>> 48e21dc6d8587776f9619fe63dbcab9e18d2f732
 // Create the runtime by composing the FRAME pallets that were previously configured.
 construct_runtime!(
 	pub enum Runtime where
@@ -309,8 +315,11 @@ construct_runtime!(
 		Sudo: pallet_sudo::{Pallet, Call, Config<T>, Storage, Event<T>},
 		// Include the custom logic from the pallet-template in the runtime.
 		TemplateModule: pallet_template::{Pallet, Call, Storage, Event<T>},
+<<<<<<< HEAD
 		Mint: pallet_mint::{Pallet, Call, Storage, Event<T>},
 		Poe: pallet_poe::{Pallet, Call, Storage, Event<T>},
+=======
+>>>>>>> 48e21dc6d8587776f9619fe63dbcab9e18d2f732
 	}
 );
 
