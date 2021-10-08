@@ -17,11 +17,6 @@ default-features = false
 path = '../pallets/template'
 version = '3.0.0-monthly-2021-10'
 
-[dependencies.pallet-mint]
-default-features = false
-path = '../pallets/mint'
-version = '3.0.0-monthly-2021-10'
-
 [dependencies.pallet-poe]
 default-features = false
 path = '../pallets/poe'
@@ -225,7 +220,6 @@ std = [
     'pallet-randomness-collective-flip/std',
     'pallet-sudo/std',
     'pallet-template/std',
-    'pallet-mint/std',
     'pallet-poe/std',
     'pallet-timestamp/std',
     'pallet-transaction-payment-rpc-runtime-api/std',
